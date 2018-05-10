@@ -1,0 +1,184 @@
+/* responsive design : bootstrap (grid) */
+/*easy comment: crtl + / */
+/* style.css */
+body{
+  background: url("images/bg.jpg") center center no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Courier, monospace;
+  font-size: 16px;
+}
+
+#container{
+    width: 980px;
+   margin: 0 auto;
+}
+
+header{
+    text-align: left;
+    padding: 20px 0;
+}
+
+#buffer{
+    height: 160px;
+    width: auto;
+    padding-bottom: 
+}
+
+@keyframes cowAnimation{
+    0%{transform: rotate(0deg)}
+    10%{transform: rotate(5deg)}
+    20%{transform: rotate(0deg)}
+    30%{transform: rotate(-5deg)}
+    40%{transform: rotate(0deg)}
+    50%{transform: rotate(5deg)}
+    60%{transform: rotate(0deg)}
+    70%{transform: rotate(-5deg)}
+    80%{transform: rotate(0deg)}
+    90%{transform: rotate(5deg)}
+    100%{transform: rotate(0deg)}
+}
+
+@keyframes cowWalk{
+    from{left: 0%}
+    to{left: 100%}
+}
+
+#cow{
+    position: absolute;
+    animation: cowAnimation 2s linear 4, cowWalk 6s linear;
+}
+
+nav{
+    margin: 2px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    border-bottom: solid 1px white;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+a:visited{
+    color:white;
+    
+}
+
+a:hover{
+    color: lightgrey;
+}
+
+h1{
+  font-family: Courier;
+  color: red;
+  font-weight: lighter;
+  font-size: 10px;
+}
+h2 {
+  font-family: Courier;
+  color: pink;
+  font-weight: lighter;
+  font-size: 8px;
+}
+a {
+  color: yellow;
+}
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
+#banner{
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 70px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+#banner h1 {
+  color: white;
+  font-size: 50px;
+}
+#banner p {
+  color: white;
+  opacity: 0.8;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-bottom: 5px
+}
+
+@keyframes buttonAnimation {
+    from { padding: 10px 20px; font-size: inherit; }
+    to   { padding: 15px 30px; font-size: 32px; }
+}
+
+.button {
+    display: inline-block;
+    background: #fc3;
+    background: linear-gradient(#fc3, #f91);
+    opacity: 0.8;
+    border: solid 1px #999;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+.button:hover {
+    border-color: #888;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.9);
+    background: #f91;
+    background: linear-gradient(to top, #fc3, #f91);
+    animation-name: buttonAnimation;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
+
+#footer{
+  padding: 10px;
+  color: lightgrey;
+  text-align: center;
+}
+
+@keyframes iconAnimation{
+    from{font-size: 30px}
+    to{font-size: 35px}
+}
+
+#footer a {
+  color: lightgrey;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-shadow: 0px 2px rgba(0 0 0 0.6);
+}
+
+#footer a:hover {
+  color: white;
+  animation: iconAnimation .5s forwards;
+}
+
+#footer a:active {
+    position: relative;
+    top: 1px;
+}
+
+
